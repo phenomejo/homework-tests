@@ -65,6 +65,7 @@ export default {
     'criteria.brand_id' (newVal, oldVal) {
       if (newVal && oldVal && newVal.length != oldVal.length) {
         const brands = this.brandList.filter((v) => newVal.includes(v.value))
+        this.$set(this.criteria, 'page', 1)
         this.$emit('initialData')
         this.$emit('filterBrand', brands)
       }
@@ -92,6 +93,7 @@ export default {
       })
 
       this.$set(this.criteria, 'category_id', [...new Set([...id, ...temp])])
+      this.$set(this.criteria, 'page', 1)
       this.$emit('initialData')
       this.$emit('filterCate', arr)
     },

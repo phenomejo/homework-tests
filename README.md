@@ -1,5 +1,9 @@
 # homework-tests
 
+## Important
+install allow-cors-access-control
+[allow-cors-access-control](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)
+
 ## Project setup
 ```
 yarn install
